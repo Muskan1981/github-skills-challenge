@@ -27,4 +27,5 @@ jobs:
       - name: Run tests
         env:
           PYTHONPATH: .
+        # Run the complete suite with per-test details in the Actions log.
         run: python -m pytest --verbose --tb=short
